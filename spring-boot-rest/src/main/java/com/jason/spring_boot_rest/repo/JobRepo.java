@@ -11,6 +11,8 @@ import java.util.List;
 @Repository
 public interface JobRepo extends JpaRepository<JobPost, Integer> {
 
+    List<JobPost> findByPostProfileContainingOrPostDescContaining(String PostProfile, String PostDesc);
+
 }
 
 //    List<JobPost> jobs= new ArrayList<>(Arrays.asList(
