@@ -15,7 +15,7 @@ public class PerformanceMonitorAspect {
 
 
 
-    @Around("execution (* com.jason.spring_boot_rest.service.JobService.getJob(..))")
+    @Around("execution (* com.jason.spring_boot_rest.service.JobService.*(..))")
     public Object monitorTime(ProceedingJoinPoint jp) throws Throwable {
 
         long start=System.currentTimeMillis();
