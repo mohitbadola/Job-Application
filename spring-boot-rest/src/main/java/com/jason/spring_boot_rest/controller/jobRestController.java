@@ -1,4 +1,4 @@
-package com.jason.spring_boot_rest;
+package com.jason.spring_boot_rest.controller;
 
 import com.jason.spring_boot_rest.model.JobPost;
 import com.jason.spring_boot_rest.service.JobService;
